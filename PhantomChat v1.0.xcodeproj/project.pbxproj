@@ -20,6 +20,10 @@
 		3D21875C2AD6960E00FE35C6 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21875B2AD6960E00FE35C6 /* ChatsView.swift */; };
 		3D21875E2AD6964D00FE35C6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21875D2AD6964D00FE35C6 /* SettingsView.swift */; };
 		3D6AAF952ADE3F1A00FAF180 /* BiometricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAF942ADE3F1A00FAF180 /* BiometricsView.swift */; };
+		3D6AAF982ADE4EE400FAF180 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAF972ADE4EE400FAF180 /* SearchBar.swift */; };
+		3D6AAF9E2ADE533400FAF180 /* ChatBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAF9D2ADE533400FAF180 /* ChatBanner.swift */; };
+		3D6AAFA12ADE53CF00FAF180 /* ChatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAFA02ADE53CF00FAF180 /* ChatsManager.swift */; };
+		3D6AAFA52ADE5B9000FAF180 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAFA42ADE5B9000FAF180 /* ChatList.swift */; };
 		3DC7EE652ADD99B700C02E15 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7EE642ADD99B700C02E15 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,10 @@
 		3D21875B2AD6960E00FE35C6 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
 		3D21875D2AD6964D00FE35C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3D6AAF942ADE3F1A00FAF180 /* BiometricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsView.swift; sourceTree = "<group>"; };
+		3D6AAF972ADE4EE400FAF180 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3D6AAF9D2ADE533400FAF180 /* ChatBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBanner.swift; sourceTree = "<group>"; };
+		3D6AAFA02ADE53CF00FAF180 /* ChatsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsManager.swift; sourceTree = "<group>"; };
+		3D6AAFA42ADE5B9000FAF180 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		3DC7EE642ADD99B700C02E15 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		3DC7EE662ADDA63300C02E15 /* PhantomChat-v1-0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PhantomChat-v1-0-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -97,6 +105,8 @@
 		3D2187482AD672EB00FE35C6 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
+				3D6AAF9F2ADE53B500FAF180 /* ViewModel */,
+				3D6AAF962ADE4ED100FAF180 /* Components */,
 				3D21875B2AD6960E00FE35C6 /* ChatsView.swift */,
 			);
 			path = Chats;
@@ -137,6 +147,24 @@
 				3D2187592AD688CB00FE35C6 /* InfoTextView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		3D6AAF962ADE4ED100FAF180 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3D6AAF972ADE4EE400FAF180 /* SearchBar.swift */,
+				3D6AAF9D2ADE533400FAF180 /* ChatBanner.swift */,
+				3D6AAFA42ADE5B9000FAF180 /* ChatList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3D6AAF9F2ADE53B500FAF180 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D6AAFA02ADE53CF00FAF180 /* ChatsManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6AAFA12ADE53CF00FAF180 /* ChatsManager.swift in Sources */,
+				3D6AAF982ADE4EE400FAF180 /* SearchBar.swift in Sources */,
+				3D6AAF9E2ADE533400FAF180 /* ChatBanner.swift in Sources */,
 				3D2187582AD6841A00FE35C6 /* MyStatusCardView.swift in Sources */,
 				3D2187542AD67FD500FE35C6 /* StatusCardView.swift in Sources */,
+				3D6AAFA52ADE5B9000FAF180 /* ChatList.swift in Sources */,
 				3D21875C2AD6960E00FE35C6 /* ChatsView.swift in Sources */,
 				3D6AAF952ADE3F1A00FAF180 /* BiometricsView.swift in Sources */,
 				3D2187392AD6717F00FE35C6 /* PhantomChat_v1_0App.swift in Sources */,

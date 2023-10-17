@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ChatsView: View {
+struct ChatsView: View {    
     var body: some View {
         NavigationView {
             Form {
-                MyStatusCardView()
-                StatusListView()
+                SearchBar()
+                ChatList()
                 InfoTextView()
             }
             .navigationTitle("Discussions")

@@ -10,7 +10,7 @@ import SwiftUI
 struct StatusListView: View {
     @ObservedObject var statusManager = StatusManager()
     var body: some View {
-        Section(header: Text("recent updates")) {
+        Section(header: Text("Recent updates")) {
             List(statusManager.statusList) { status in
                 StatusCardView(status: status)
             }
