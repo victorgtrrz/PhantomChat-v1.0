@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ChatsView: View {
     var body: some View {
-        Text("Hello, World from Chats!")
+        NavigationView {
+            Form {
+                MyStatusCardView()
+                StatusListView()
+                InfoTextView()
+            }
+            .navigationTitle("Discussions")
+            .navigationBarItems(leading:
+                Text("Clear").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/))
+        }
     }
 }
 
 #Preview {
-    ChatsView()
+    ChatsView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    @State private var isActive = false
+    @State private var size = 0.8
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if (isActive) {
+            BottomBar()
+        } else {
+            VStack {
+                VStack {
+                    Image("app_icon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80)
+                    Text("Phantom Chat v1.0")
+                        .font(.system(size: 12))
+                }
+                .scaleEffect(size)
+                .onAppear {
+                    withAnimation(.easeInOut(duration: 2)) {
+                        self.size = 1
+                    }
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    withAnimation {
+                        self.isActive = true
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    SplashScreenView()
+    SplashScreenView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }
